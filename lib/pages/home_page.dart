@@ -14,12 +14,22 @@ class HomePage extends StatelessWidget {
           appBar: constraints.maxWidth < mobileBreakpoint
               ? PreferredSize(
                   child: MobileAppbar(),
-                  preferredSize: Size(double.infinity, 56))
+                  preferredSize: Size(double.infinity, 56),
+                )
               : PreferredSize(
                   child: WebAppBar(),
                   preferredSize: Size(double.infinity, 72.0),
                 ),
           drawer: constraints.maxWidth < mobileBreakpoint ? Drawer() : null,
+          body: Align(
+            alignment: Alignment.topCenter,
+            child: ConstrainedBox(
+              constraints: BoxConstraints(maxWidth: 1400),
+              child: Container(
+                color: Colors.red,
+              ),
+            ),
+          ),
         );
       },
     );
