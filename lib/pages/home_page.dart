@@ -2,6 +2,7 @@ import 'package:app_responsive/core/core.dart';
 import 'package:flutter/material.dart';
 
 import 'home/widgets/app_bar/app_bar.dart';
+import 'home/widgets/sections/sections.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -25,9 +26,11 @@ class HomePage extends StatelessWidget {
             alignment: Alignment.topCenter,
             child: ConstrainedBox(
               constraints: BoxConstraints(maxWidth: 1400),
-              child: Container(
-                color: Colors.red,
-              ),
+              child: ListView(
+                children: [
+                  TopSection()
+                ],
+              )
             ),
           ),
         );
