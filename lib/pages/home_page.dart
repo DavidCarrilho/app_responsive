@@ -1,5 +1,7 @@
-import 'package:app_responsive/pages/home/widgets/app_bar/mobile_app_bar.dart';
+import 'package:app_responsive/pages/home/widgets/app_bar/web_app_bar.dart';
 import 'package:flutter/material.dart';
+
+import 'home/widgets/app_bar/app_bar.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -13,8 +15,11 @@ class HomePage extends StatelessWidget {
               ? PreferredSize(
                   child: MobileAppbar(),
                   preferredSize: Size(double.infinity, 56))
-              : AppBar(),
-              drawer: Drawer(),
+              : PreferredSize(
+                  child: WebAppBar(),
+                  preferredSize: Size(double.infinity, 72.0),
+                ),
+          drawer: Drawer(),
         );
       },
     );
