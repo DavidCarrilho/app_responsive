@@ -32,14 +32,33 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                           decoration: InputDecoration(
                               border: InputBorder.none,
                               hintText: 'Pesquise alguma coisa aqui',
-                              isCollapsed: true
-                              ),
+                              isCollapsed: true),
                         ),
                       )
                     ],
                   ),
                 ),
-              )
+              ),
+              if (constraints.maxWidth >= 400) ...[
+                const SizedBox(width: 8.0),
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Aprender',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+              ],
+              if (constraints.maxWidth >= 500) ...[
+                const SizedBox(width: 8.0),
+                TextButton(
+                  onPressed: () {},
+                  child: Text(
+                    'Flutter',
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ),
+              ]
             ],
           );
         },
