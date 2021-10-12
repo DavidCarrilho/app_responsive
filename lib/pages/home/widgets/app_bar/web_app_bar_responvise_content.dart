@@ -40,7 +40,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 ),
               ),
               if (constraints.maxWidth >= 400) ...[
-                const SizedBox(width: 8.0),
+                const SizedBox(width: 32.0),
                 TextButton(
                   onPressed: () {},
                   child: Text(
