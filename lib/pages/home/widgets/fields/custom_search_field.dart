@@ -14,6 +14,7 @@ class CustomSearchField extends StatelessWidget {
           borderSide: BorderSide(color: Colors.white),
         ),
         hintText: 'Digite alguma busca aqui',
+        hintStyle: TextStyle(color: Colors.white),
         suffixIcon: IconButton(
           onPressed: () {},
           icon: Icon(Icons.search),
