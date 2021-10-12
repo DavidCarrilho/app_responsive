@@ -1,7 +1,13 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 
-main() => runApp(DevicePreview(builder: (_)=>MyApp()));
+import 'pages/pages.dart';
+
+main() => runApp(
+      // DevicePreview(builder: (_) =>
+      MyApp(),
+      // ),
+    );
 
 class MyApp extends StatelessWidget {
   @override
@@ -11,14 +17,7 @@ class MyApp extends StatelessWidget {
       locale: DevicePreview.locale(context),
       debugShowCheckedModeBanner: false,
       title: 'App Responsivo',
-      home: Home(),
+      home: HomePage(),
     );
-  }
-}
-
-class Home extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold();
   }
 }
