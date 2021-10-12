@@ -12,10 +12,12 @@ class MobileAppbar extends StatelessWidget {
           onPressed: () {},
           icon: Icon(Icons.search),
         ),
+        const SizedBox(width: 8.0),  
         IconButton(
           onPressed: () {},
           icon: Icon(Icons.shopping_cart),
-        )
+        ),
+        const SizedBox(width: 16.0)
       ],
     );
   }

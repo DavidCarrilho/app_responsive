@@ -10,6 +10,7 @@ class WebAppBar extends StatelessWidget {
       toolbarHeight: 72.0,
       title: Row(
         children: [
+          const SizedBox(width: 24.0),
           Text('Flutter'),
           const SizedBox(width: 32.0),
           WebAppBarResponsiveContent(),

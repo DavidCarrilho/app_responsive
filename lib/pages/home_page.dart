@@ -19,7 +19,7 @@ class HomePage extends StatelessWidget {
                   child: WebAppBar(),
                   preferredSize: Size(double.infinity, 72.0),
                 ),
-          drawer: Drawer(),
+          drawer: constraints.maxWidth < 800 ? Drawer() : null,
         );
       },
     );
