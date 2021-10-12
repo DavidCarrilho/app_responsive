@@ -14,6 +14,7 @@ class HomePage extends StatelessWidget {
                   child: MobileAppbar(),
                   preferredSize: Size(double.infinity, 56))
               : AppBar(),
+              drawer: Drawer(),
         );
       },
     );
