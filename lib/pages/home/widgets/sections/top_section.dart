@@ -94,7 +94,7 @@ class TopSection extends StatelessWidget {
                           Text(
                             'Vamos aprender Flutter com o professor Luan David! Cursos por apenas R\$22,90. Qualidade Garantida',
                             style: TextStyle(
-                              fontSize: 14.0,
+                              fontSize: 16.0,
                               color: Colors.white,
                               height: 1.5,
                             ),
@@ -104,13 +104,50 @@ class TopSection extends StatelessWidget {
                         ],
                       ),
                     ),
-                  ),)
+                  ),
+                )
               ],
             ),
           );
         }
 
-        return Container();
+        return Column(
+          children: [
+            AspectRatio(
+              aspectRatio: 3.4,
+              child: Image.network(
+                'https://images.pexels.com/photos/892757/pexels-photo-892757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w940',
+                fit: BoxFit.cover,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(24.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Aprenda Flutter com este curso',
+                    style: TextStyle(
+                        fontSize: 35,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white),
+                  ),
+                  const SizedBox(height: 8.0),
+                  Text(
+                    'Vamos aprender Flutter com o professor Luan David! Cursos por apenas R\$22,90. Qualidade Garantida',
+                    style: TextStyle(
+                      fontSize: 16.0,
+                      color: Colors.white,
+                      height: 1.5,
+                    ),
+                  ),
+                  const SizedBox(height: 16.0),
+                  CustomSearchField()
+                ],
+              ),
+            )
+          ],
+        );
       },
     );
   }
