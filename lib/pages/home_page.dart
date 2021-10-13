@@ -29,7 +29,8 @@ class HomePage extends StatelessWidget {
               constraints: BoxConstraints(maxWidth: 1400),
               child: ListView(
                 children: [
-                  TopSection()
+                  TopSection(),
+                  AdvantagesSection()
                 ],
               )
             ),
