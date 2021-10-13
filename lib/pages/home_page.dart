@@ -30,7 +30,8 @@ class HomePage extends StatelessWidget {
               child: ListView(
                 children: [
                   TopSection(),
-                  AdvantagesSection()
+                  AdvantagesSection(),
+                  CourseSection()
                 ],
               )
             ),
