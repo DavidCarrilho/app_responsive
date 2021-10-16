@@ -9,8 +9,8 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(
       builder: (context, constraints) {
-        print(
-            'biggest ${constraints.biggest} smallest ${constraints.smallest}');
+        // print(
+        //     'biggest ${constraints.biggest} smallest ${constraints.smallest}');
         return Scaffold(
           backgroundColor: Colors.black,
           appBar: constraints.maxWidth < mobileBreakpoint
