@@ -16,8 +16,8 @@ class TopSection extends StatelessWidget {
               children: [
                 AspectRatio(
                   aspectRatio: 3.4,
-                  child: Image.network(
-                    'https://images.pexels.com/photos/892757/pexels-photo-892757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w940',
+                  child: Image.asset(
+                    'assets/capa.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -41,7 +41,7 @@ class TopSection extends StatelessWidget {
                           ),
                           const SizedBox(height: 8.0),
                           Text(
-                            'Vamos aprender Flutter com o professor Luan David! Cursos por apenas R\$22,90. Qualidade Garantida',
+                            'Vamos aprender Flutter com cursos de apenas R\$22,90. Qualidade Garantida',
                             style: TextStyle(
                               fontSize: 18.0,
                               color: Colors.white,
@@ -67,8 +67,8 @@ class TopSection extends StatelessWidget {
                 SizedBox(
                   height: 250.0,
                   width: double.infinity,
-                  child: Image.network(
-                    'https://images.pexels.com/photos/892757/pexels-photo-892757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w940',
+                  child: Image.asset(
+                    'assets/capa.jpg',
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -115,8 +115,8 @@ class TopSection extends StatelessWidget {
           children: [
             AspectRatio(
               aspectRatio: 3.4,
-              child: Image.network(
-                'https://images.pexels.com/photos/892757/pexels-photo-892757.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w940',
+              child: Image.asset(
+                    'assets/capa.jpg',
                 fit: BoxFit.cover,
               ),
             ),
