@@ -2,6 +2,10 @@
 
 A new Flutter project.
 
+<p float="left">
+  <img src="https://github.com/DavidCarrilho/app_responsive/blob/5f5aba8bca2c2d0542008c77703778ebf00bd6e7/screenshot/gif.gif" width="500" />
+</p>
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
