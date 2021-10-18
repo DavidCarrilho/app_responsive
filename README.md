@@ -6,6 +6,10 @@ Uma aplicação responsiva.
   <img src="https://github.com/DavidCarrilho/app_responsive/blob/5f5aba8bca2c2d0542008c77703778ebf00bd6e7/screenshot/gif.gif" width="500" />
 </p>
 
+<p float="left">
+  <img src="https://github.com/DavidCarrilho/app_responsive/blob/5f5aba8bca2c2d0542008c77703778ebf00bd6e7/screenshot/gif.gif" width="200" />
+</p>
+
 ## Getting Started
 
 This projec use Flutter 1.22.5
