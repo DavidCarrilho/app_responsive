@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:app_responsive/core/core.dart';
 import 'package:app_responsive/pages/home/widgets/fields/fields.dart';
 import 'package:flutter/material.dart';

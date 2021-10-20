@@ -16,25 +16,25 @@ class HomePage extends StatelessWidget {
           appBar: constraints.maxWidth < mobileBreakpoint
               ? PreferredSize(
                   child: MobileAppbar(),
-                  preferredSize: Size(double.infinity, 56),
+                  preferredSize: const Size(double.infinity, 56),
                 )
               : PreferredSize(
                   child: WebAppBar(),
-                  preferredSize: Size(double.infinity, 72.0),
+                  preferredSize: const Size(double.infinity, 72.0),
                 ),
-          drawer: constraints.maxWidth < mobileBreakpoint ? Drawer() : null,
+          drawer:
+              constraints.maxWidth < mobileBreakpoint ? const Drawer() : null,
           body: Align(
             alignment: Alignment.topCenter,
             child: ConstrainedBox(
-              constraints: BoxConstraints(maxWidth: 1400),
-              child: ListView(
-                children: [
-                  TopSection(),
-                  AdvantagesSection(),
-                  CourseSection()
-                ],
-              )
-            ),
+                constraints: const BoxConstraints(maxWidth: 1400),
+                child: ListView(
+                  children: [
+                    TopSection(),
+                    AdvantagesSection(),
+                    CourseSection()
+                  ],
+                )),
           ),
         );
       },

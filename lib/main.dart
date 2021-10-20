@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'pages/home.dart';
 
 main() => runApp(
-      // DevicePreview(builder: (_) =>
+      DevicePreview(builder: (_) =>
       MyApp(),
-      // ),
+      ),
     );
 
 class MyApp extends StatelessWidget {
@@ -18,7 +18,52 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'App Responsivo',
       home: HomePage(),
+      // home: HomeWithOverFlow(),
     );
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+class HomeWithOverFlow extends StatelessWidget {
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: Column(children: [
+        Container(width: 300, height: 200, color: Colors.orange),
+        Container(width: 300, height: 200, color: Colors.orange),
+        Container(width: 300, height: 200, color: Colors.orange),
+        Container(width: 300, height: 200, color: Colors.orange),
+        Container(width: 300, height: 200, color: Colors.orange),
+        Container(width: 300, height: 200, color: Colors.orange),
+        Container(width: 300, height: 200, color: Colors.orange),
+        Container(width: 300, height: 200, color: Colors.orange),
+        Container(width: 300, height: 200, color: Colors.orange),
+        Container(width: 300, height: 200, color: Colors.orange),
+      ],),
+    );
+  }
+}
