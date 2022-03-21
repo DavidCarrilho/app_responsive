@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class WebAppBarResponsiveContent extends StatelessWidget {
+  const WebAppBarResponsiveContent({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Expanded(
@@ -22,12 +24,12 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                       const SizedBox(width: 4.0),
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.search,
                         ),
                         color: Colors.grey,
                       ),
-                      Expanded(
+                      const Expanded(
                         child: TextField(
                           decoration: InputDecoration(
                               border: InputBorder.none,
@@ -43,7 +45,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 const SizedBox(width: 32.0),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Aprender',
                     style: TextStyle(color: Colors.white),
                   ),
@@ -53,7 +55,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
                 const SizedBox(width: 8.0),
                 TextButton(
                   onPressed: () {},
-                  child: Text(
+                  child: const Text(
                     'Flutter',
                     style: TextStyle(color: Colors.white),
                   ),
