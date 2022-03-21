@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:developer' as developer;
 
 class WebAppBarResponsiveContent extends StatelessWidget {
   const WebAppBarResponsiveContent({Key? key}) : super(key: key);
@@ -8,7 +9,7 @@ class WebAppBarResponsiveContent extends StatelessWidget {
     return Expanded(
       child: LayoutBuilder(
         builder: (context, constraints) {
-          print(
+          developer.log(
               'Biggest ${constraints.biggest} smallest ${constraints.smallest}');
           return Row(
             children: [
