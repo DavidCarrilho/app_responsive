@@ -27,14 +27,11 @@ class HomePage extends StatelessWidget {
           body: Align(
             alignment: Alignment.topCenter,
             child: ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 1400),
-                child: ListView(
-                  children: [
-                    TopSection(),
-                    AdvantagesSection(),
-                    CourseSection()
-                  ],
-                )),
+              constraints: const BoxConstraints(maxWidth: 1400),
+              child: ListView(
+                children: [TopSection(), AdvantagesSection(), CourseSection()],
+              ),
+            ),
           ),
         );
       },

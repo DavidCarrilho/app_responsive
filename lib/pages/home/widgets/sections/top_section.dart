@@ -5,6 +5,8 @@ import 'package:app_responsive/pages/home/widgets/fields/fields.dart';
 import 'package:flutter/material.dart';
 
 class TopSection extends StatelessWidget {
+  const TopSection({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
@@ -93,7 +95,7 @@ class TopSection extends StatelessWidget {
                                 color: Colors.white),
                           ),
                           const SizedBox(height: 8.0),
-                          Text(
+                          const Text(
                             'Vamos aprender Flutter com o professor Luan David! Cursos por apenas R\$22,90. Qualidade Garantida',
                             style: TextStyle(
                               fontSize: 16.0,

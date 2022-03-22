@@ -3,7 +3,6 @@
 import 'package:app_responsive/core/breakpoints.dart';
 import 'package:app_responsive/pages/home/widgets/couse_item.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 class CourseSection extends StatelessWidget {
   @override
@@ -20,9 +19,10 @@ class CourseSection extends StatelessWidget {
             vertical: 16.0,
             horizontal: constraints.maxWidth >= tabletBreakpoint ? 0.0 : 16.0),
         gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-            maxCrossAxisExtent: 300,
-            crossAxisSpacing: 14.0,
-            mainAxisSpacing: 14.0),
+          maxCrossAxisExtent: 300,
+          crossAxisSpacing: 14.0,
+          mainAxisSpacing: 14.0,
+        ),
       );
     });
   }
