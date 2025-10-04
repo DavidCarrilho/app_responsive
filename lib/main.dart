@@ -5,11 +5,13 @@ import 'pages/home.dart';
 
 main() => runApp(
       DevicePreview(builder: (_) =>
-      MyApp(),
+      const MyApp(),
       ),
     );
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -48,6 +50,8 @@ class MyApp extends StatelessWidget {
 
 
 class HomeWithOverFlow extends StatelessWidget {
+  const HomeWithOverFlow({Key? key}) : super(key: key);
+
 
   @override
   Widget build(BuildContext context) {
