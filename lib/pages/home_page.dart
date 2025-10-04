@@ -1,10 +1,12 @@
-import 'package:app_responsive/core/core.dart';
+import 'package:app_responsive/common/core.dart';
 import 'package:flutter/material.dart';
 
 import 'home/widgets/app_bar/app_bar.dart';
 import 'home/widgets/sections/sections.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return LayoutBuilder(
@@ -18,9 +20,9 @@ class HomePage extends StatelessWidget {
                   child: MobileAppbar(),
                   preferredSize: const Size(double.infinity, 56),
                 )
-              : PreferredSize(
+              : const PreferredSize(
                   child: WebAppBar(),
-                  preferredSize: const Size(double.infinity, 72.0),
+                  preferredSize: Size(double.infinity, 72.0),
                 ),
           drawer:
               constraints.maxWidth < mobileBreakpoint ? const Drawer() : null,
@@ -29,7 +31,7 @@ class HomePage extends StatelessWidget {
             child: ConstrainedBox(
               constraints: const BoxConstraints(maxWidth: 1400),
               child: ListView(
-                children: [TopSection(), AdvantagesSection(), CourseSection()],
+                children: [const TopSection(), AdvantagesSection(), CourseSection()],
               ),
             ),
           ),
