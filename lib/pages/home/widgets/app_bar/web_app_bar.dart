@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'app_bar.dart';
 
 class WebAppBar extends StatelessWidget {
+  const WebAppBar({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return AppBar(
@@ -12,34 +14,38 @@ class WebAppBar extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 24.0),
         child: Row(
           children: [
-            Text('Flutter'),
+            const Text('Flutter'),
             const SizedBox(width: 32.0),
-            WebAppBarResponsiveContent(),
+            const WebAppBarResponsiveContent(),
             const SizedBox(width: 16.0),
             IconButton(
               onPressed: () {},
-              icon: Icon(Icons.shopping_cart),
+              icon: const Icon(Icons.shopping_cart),
             ),
             const SizedBox(width: 16.0),
             SizedBox(
               height: 38.0,
               width: 120.0,
-              child: OutlineButton(
+              child: OutlinedButton(
                 onPressed: () {},
-                child: Text('Fazer login'),
-                textColor: Colors.white,
-                borderSide: BorderSide(color: Colors.white, width: 2.0),
+                style: OutlinedButton.styleFrom(
+                  foregroundColor: Colors.white,
+                  side: const BorderSide(color: Colors.white, width: 2.0),
+                ),
+                child: const Text('Fazer login'),
               ),
             ),
             const SizedBox(width: 18.0),
             SizedBox(
               height: 40.0,
               width: 120.0,
-              child: RaisedButton(
+              child: ElevatedButton(
                 onPressed: () {},
-                child: Text('Cadastre-se'),
-                color: Colors.white,
-                textColor: Colors.black,
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.white,
+                  foregroundColor: Colors.black,
+                ),
+                child: const Text('Cadastre-se'),
               ),
             ),
           ],
