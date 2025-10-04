@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors
 
-import 'package:app_responsive/core/breakpoints.dart';
+import 'package:app_responsive/common/breakpoints.dart';
 import 'package:app_responsive/pages/home/widgets/couse_item.dart';
 import 'package:flutter/material.dart';
 
